@@ -62,7 +62,7 @@ export const Image = styled.img`
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  width: 326px;
+  width: 100%;
   
   @media (min-width: 688px) {
     width: 512px;

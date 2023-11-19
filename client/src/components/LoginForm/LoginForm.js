@@ -49,14 +49,14 @@ function LoginForm() {
           type="email"
           placeholder="E-mail"
           value={email}
-          autocomplete="email"
+          autoComplete="email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <Input
           type="password"
           placeholder="Senha"
           value={password}
-          autocomplete="current-password"
+          autoComplete="current-password"
           onChange={(e) => setPassword(e.target.value)}
         />
         <Button type="submit">Entrar</Button>

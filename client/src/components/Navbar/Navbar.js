@@ -11,7 +11,7 @@ function Navbar() {
     return (
         <Nav>
             <NavItem href="/home" active={location.pathname === '/home'}>Home</NavItem>
-            <NavItem href={loggedUser} active={id === loggedUser}>Profile</NavItem>
+            <NavItem href={loggedUser} active={location.pathname !== '/home' && location.pathname !== '/logout'}>Profile</NavItem>
             <NavItem href="/logout" active={location.pathname === '/logout'}>Logout</NavItem>
         </Nav>
     );
