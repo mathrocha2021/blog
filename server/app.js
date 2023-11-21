@@ -40,7 +40,4 @@ app.use('/api/auth', authRoutes);
 app.use('/api/posts', postRoutes);
 app.use('/api/users', userRoutes);
 
-// Iniciar o servidor na porta especificada
-app.listen(port, () => {
-  console.log("Servidor rodando na porta 3000");
-});
+export default app;
