@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import axios from 'axios';
+import api from '../config/configApi';
 
 export const AuthContext = createContext();
 
@@ -11,7 +12,7 @@ export const AuthProvider = ({ children }) => {
     // Função para fazer a chamada à API para validar o token
     const validateToken = async (token) => {
       try {
-        const response = await axios.get('http://localhost:3000/api/auth/validation', {
+        const response = await api.get('/auth/validation', {
           headers: {
             Authorization: token,
           },
